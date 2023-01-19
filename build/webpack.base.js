@@ -4,7 +4,6 @@ const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HappyPack = require('happypack');
-const { webpack } = require("webpack");
 const os = require('os');
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length });
 module.exports = {

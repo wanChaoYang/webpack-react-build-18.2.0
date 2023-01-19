@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import CacheRoute, { CacheSwitch } from 'react-router-cache-route';
+//react-router-cache-route目前还不支持reactv18和routerv5
+// import CacheRoute, { CacheSwitch } from 'react-router-cache-route'
 import router from "./router/index.js";
 import "./global.less"
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
                             <Route
                                 exact={item.exact}
                                 path={item.path}
-                                element={item.element }
+                                element={item.element}
                                 key={item.path}
                             />
                         )
