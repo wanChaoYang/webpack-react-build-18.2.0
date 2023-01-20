@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-//react-router-cache-route目前还不支持reactv18和routerv5
-// import CacheRoute, { CacheSwitch } from 'react-router-cache-route'
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+//TOTO:react-router-cache-route引入报错react18.2.0版本不支持
+// import CacheRoute, { CacheSwitch } from 'react-router-cache-route';
 import router from "./router/index.js";
 import "./global.less"
 const App = () => {
